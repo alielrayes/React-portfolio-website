@@ -33,15 +33,29 @@ section.contact-us #message {
   font-size: 1.1rem;
 }
 
-section.contact-us #email:focus,
-section.contact-us #message:focus {
-  border: 1px solid rgb(45 212 191);
+.light section.contact-us #email,
+.light section.contact-us #message {
+  background-color: rgba(255, 255, 255, 0.162);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  color: #232324;
 }
 
+section.contact-us #email:focus,
+section.contact-us #message:focus,
 section.contact-us #email:hover,
 section.contact-us #message:hover {
   border: 1px solid rgb(45 212 191);
 }
+
+.light section.contact-us #email:focus,
+.light section.contact-us #message:focus,
+.light section.contact-us #email:hover,
+.light section.contact-us #message:hover {
+  border: 1px solid rgb(78, 80, 80);
+}
+
+ 
 
 section.contact-us #message {
   min-height: 9rem;
@@ -69,6 +83,13 @@ section.contact-us .submit:hover {
 /* =====================================
   3- Responsive Design (media query)
 ======================================== */
+
+
+@media (max-width: 1250px) {
+  section.contact-us  .contact-animation{display: none;}
+
+}
+
 
 @media (max-width: 600px) {
   section.contact-us .animation {

@@ -42,12 +42,16 @@ main section.left-section.flex button.active {
   border: 1px solid var(--blue);
 }
 
+.light main section.left-section.flex button.active {
+  border: 1px solid #000;
+}
+
 /* ===============================
    2. Right Section ==> Card
 ================================== */
 
 main section.right-section.flex {
-  /* flex-grow: 1; */
+  flex-grow: 1;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -56,6 +60,7 @@ main section.right-section.flex {
 }
 
 .card {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(93, 188, 252, 0.3);
   border-radius: 5px;
   transition: 0.3s;
@@ -65,8 +70,14 @@ main section.right-section.flex {
   );
 }
 
+.light .card,
+.light .card:hover {
+  border: none;
+}
+
 .card:hover {
   border: 1px solid var(--blue);
+  /* background-color: rgba(246, 246, 246); */
   rotate: 1deg;
   scale: 1.01;
   cursor: pointer;
@@ -82,6 +93,7 @@ main section.right-section.flex {
 
 .card .box .title {
   color: var(--title);
+  text-transform: capitalize;
 }
 
 .card .box .sub-title {
@@ -113,8 +125,6 @@ main section.right-section.flex {
   color: var(--blue);
   margin-right: 12px;
 }
-
-
 
 /* =====================================
   3- Responsive Design (media query)

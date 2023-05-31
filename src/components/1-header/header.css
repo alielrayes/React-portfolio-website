@@ -63,6 +63,11 @@ header button.mode {
   color: var(--subtitle);
   border: 1px solid rgba(244, 165, 96, 0.249);
   transition: 0.2s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+
+header .icon-sun {
+  color: rgb(255, 165, 0);
 }
 
 header .icon-menu:hover,
@@ -113,8 +118,9 @@ header .fixed {
 header .fixed ul.modal {
   animation: mymove 0.77s 1;
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+margin-inline: auto;
+
+
   margin-top: 2rem;
   border-radius: 1rem;
   padding: 1rem 2rem;
@@ -146,7 +152,7 @@ header .fixed ul.modal li a {
 /* =====================================
   4- Responsive Design (media query)
 ======================================== */
-@media (max-width: 700px) {
+@media (width < 700px) {
   header.flex nav {
     display: none;
   }

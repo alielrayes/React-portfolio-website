@@ -4,9 +4,6 @@
 1. Left Section
 2. Right Section ==> animation*/
 
-
-
-
 section.hero {
   margin-top: 3rem;
 }
@@ -17,6 +14,7 @@ section.hero {
 section.hero .parent-avatar.flex {
   align-items: end;
   gap: 0.6rem;
+  min-height: 88px;
 }
 
 section.hero .left-section {
@@ -31,6 +29,7 @@ section.hero .icon-verified {
 
 section.hero .avatar {
   width: 88px;
+
   border-radius: 50%;
   border: 1px solid darkorange;
   padding: 1px;
@@ -67,3 +66,13 @@ section.hero .all-icons .icon:hover {
 /* ===================================
     2. Right Section ==> animation
 ====================================== */
+section.hero .animation {
+  width: 100%;
+  translate: 100px 55px;
+}
+
+@media (max-width: 1250px) {
+  section.hero .animation {
+    display: none;
+  }
+}
